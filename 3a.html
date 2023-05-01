@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        
+        
+        <script type="text/javascript">
+            function base(num)
+            {
+                this.num=num;
+            }
+            base.prototype.Add=function(n)
+            {
+                this.num=this.num+n;
+                return this;
+            }
+            base.prototype.sub=function(n)
+            {
+                this.num=this.num-n;
+                return this;
+            }
+            base.prototype.ans=function(n)
+            {
+                return this.num;
+            }
+            var i=10;
+            var res=base(i).Add(4).sub(5).ans();
+            console.log(res);
+        </script>
+    </body>
+</html>
